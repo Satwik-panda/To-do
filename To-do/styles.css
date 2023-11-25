@@ -1,0 +1,93 @@
+body{
+    font-family: "Nunito", "Roboto Mono", "Vazirmatn", sans-serif ;
+    background-color: #fff2d5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    text-align: center;
+    color: black;
+    background-color: #eddebc;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    border-radius: 15px;
+    width: 98%;
+    font-weight: 600;
+}
+#task-entry{
+    display: flex;
+    margin: 3rem 0;
+}
+input, button {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+}
+#new-task{
+    color: rgb(36, 36, 36);
+    flex: 1 1 0%;
+    padding: 5px 1rem;
+    margin-right: 1rem;
+    background-color: #eddebc;
+    border-radius: 1rem;   
+    font-size: 1.25rem;
+}
+/* --------------------add new task button------------------ */
+#add-btn{
+    color: #0061fe; 
+    border: 2px solid #0061fe; 
+    font-weight: 600;
+    border-radius: 1rem; 
+    padding: 0 1rem;
+    transition: 0.4s;
+}
+#add-btn:hover{
+    color: white;
+    background-color: #0061fe;
+}
+#add-btn:active{
+    color: white;
+    background-color: #76bb40;
+    border-color: #76bb40;
+    transition-duration: 0.1s;
+}
+/* --------------------------------------------------------- */
+
+main{
+    padding: 1rem 2rem;
+}
+main h2{
+    color: #d19d01;
+}   
+.task-data-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    background-color: #eddebc;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+}
+.content{
+    display: flex;
+    flex:1 1 0%;
+    width: 100%;
+}
+.content input{
+    flex: 1 1 0%;
+}
+.actions{
+    margin-left: 1rem;
+}
+.edit{
+    color: #53af0a;
+    /* font-weight: 600; */
+}
+.delete{
+    color: #ff2323;
+    /* font-weight: 600; */
+
+}
