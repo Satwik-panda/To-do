@@ -16,10 +16,15 @@ body{
     border-radius: 15px;
     width: 98%;
     font-weight: 600;
+    outline:0.5px solid gray;
 
 }
 .heading h1{
     padding: 1rem 0;
+    /* color: #8e2949; */
+    font-weight: 700;
+    
+
 }
 .heading img{
     height: 5rem;
@@ -44,10 +49,21 @@ input, button {
     border-radius: 1rem;   
     font-size: 1.25rem;
 }
-/* #task-entry input[type="text"]:focus{
-    border:2px solid black;
-    background-color: gray;
-} */
+#task-entry input[type="text"]:focus{
+    outline:1px solid #d19d01;
+    box-shadow: 0 0 10px #d19d01a9;
+}
+
+.content {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.content.expand {
+    white-space: normal;
+    overflow: visible;
+}
 /* --------------------add new task button------------------ */
 #add-btn{
     color: #0061fe; 
